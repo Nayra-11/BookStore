@@ -1,0 +1,6 @@
+<!-- res/values/text_appearance.xml -->
+<resources>
+    <style name="MenuTextAppearance" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textStyle">bold</item> <!-- جعل النص bold -->
+    </style>
+</resources>
