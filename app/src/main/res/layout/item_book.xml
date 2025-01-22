@@ -10,24 +10,21 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:elevation="4dp"
-        android:backgroundTint="#FFFFFF">
+        android:backgroundTint="@color/white">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp">
 
-            <!-- أيقونة X في الزاوية العلوية اليمنى -->
             <ImageView
                 android:id="@+id/closeIcon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/close"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
-                />
+                android:layout_alignParentTop="true" />
 
-            <!-- صورة الكتاب -->
             <ImageView
                 android:id="@+id/bookImage"
                 android:layout_width="80dp"
@@ -35,67 +32,68 @@
                 android:scaleType="centerCrop"
                 android:layout_alignParentStart="true"
                 android:layout_marginEnd="16dp"
-                android:src="@{book.imageResId}"/>
+                app:imageResource="@{book.imageResId}"/>
 
-            <!-- عنوان الكتاب -->
-            <TextView
-                android:id="@+id/bookTitle"
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="One Hundred Years of Solitude"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#000000"
                 android:layout_toEndOf="@id/bookImage"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
-                android:maxLines="2"
-                android:ellipsize="end"
-                android:layout_toStartOf="@id/wantToReadButton"/>
+                android:layout_toStartOf="@id/wantToReadButton"
+                android:orientation="vertical"
+                >
 
-            <!-- مؤلف الكتاب -->
-            <TextView
-                android:id="@+id/bookAuthor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="by Gabriel Garcia Marquez"
-                android:textSize="14sp"
-                android:textColor="#000000"
-                android:layout_toEndOf="@id/bookImage"
-                android:layout_below="@id/bookTitle"
-                android:layout_marginTop="4dp"/>
+                <TextView
+                    android:id="@+id/bookTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:text="@{book.title}"
+                    />
 
-            <!-- زر Want to Read -->
+                <TextView
+                    android:id="@+id/bookAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    android:text="@{book.author}"/>
+            </LinearLayout>
+
             <Button
                 android:id="@+id/wantToReadButton"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:text="Want to Read"
                 android:textSize="10dp"
-                android:textColor="#FFFFFF"
-                android:backgroundTint="#FF5722"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/orange"
                 android:layout_alignParentEnd="true"
-                android:layout_alignTop="@id/bookTitle"
-                android:layout_marginEnd="8dp"
+                android:layout_alignTop="@id/bookImage"
+                android:layout_marginEnd="19dp"
                 android:layout_marginTop="0dp"
-                android:gravity="center"/>
+                android:gravity="center" />
 
-            <!-- التقييم (RatingBar) -->
             <RatingBar
                 android:id="@+id/bookRating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:numStars="5"
-                android:stepSize="1"
-                android:rating="4"
-                android:progressTint="#ECCF8D"
+                android:stepSize=".5"
+                android:rating="@{book.rating}"
+                android:progressTint="@color/yellow"
                 android:layout_alignParentEnd="true"
                 android:layout_below="@id/wantToReadButton"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:scaleX="0.4"
-                android:scaleY="0.4"/>
+                android:layout_marginEnd="27dp"
+                android:isIndicator="false"
+                style="@style/Widget.AppCompat.RatingBar.Small"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </layout>

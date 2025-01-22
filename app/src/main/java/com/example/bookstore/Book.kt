@@ -1,7 +1,3 @@
 package com.example.bookstore
-data class Book(
-    val title: String,
-    val author: String,
-    val imageResId: Int,
-    val rating: Float
-)
+
+data class Book(var title: String, var author: String, var imageResId: Int, var rating: Float)

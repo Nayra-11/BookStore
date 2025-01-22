@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:padding="16dp"
-    android:background="#009688"
+    android:background="@color/green"
     android:gravity="center_vertical">
 
-    <!-- الصورة المستديرة -->
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="80dp"
@@ -16,7 +16,7 @@
         android:src="@drawable/proff"
         />
 
-    <!-- اسم المستخدم -->
+
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
