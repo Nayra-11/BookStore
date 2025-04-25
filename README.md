@@ -21,7 +21,7 @@ Leverages RecyclerView, Data Binding, Navigation Drawer and Material UI componen
 
 | Home Screen | Navigation Drawer |
 |-------------|-------------------|
-| ![Home](app/src/main/res/drawable/ph1.jpg | ![Drawer](app/src/main/res/drawable/ph2.jpg) |
+| ![Home](app/src/main/res/drawable/ph1.jpg) | ![Drawer](app/src/main/res/drawable/ph2.jpg) |
 
 > 💡 Place your screenshots inside a `screenshots/` folder at the project root.
 
