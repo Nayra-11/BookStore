@@ -1,37 +1,34 @@
-# Android Student Groups App 📚
+# Android Bookstore App 📚
 
-An interactive Android app built using Kotlin, designed to display and manage a categorized list of users (e.g., students grouped by sections).  
-The app leverages modern UI components including Toolbar, Navigation Drawer, Bottom Navigation, and RecyclerView, and includes support for dynamic language switching (English ↔ Arabic).
+A modern Android application built in **Kotlin** that showcases a simple bookstore.  
+Browse a scrollable list of books with cover images, titles, authors, and ratings.  
+Leverages RecyclerView, Data Binding, Navigation Drawer and Material UI components for a smooth user experience.
 
 ---
 
 ## ✨ Features
 
-- 👥 Grouped user list with names and emails using `RecyclerView`
-- 🧭 Navigation Drawer with clickable menu items
-- 🧩 Bottom Navigation for quick access to sections
-- 🔍 Toolbar with menu icons (search, profile, settings, change language)
-- 🌐 Switch app language dynamically (e.g., English ↔ Arabic)
-- 💡 Material Design components and clean UI structure
-- 🧼 Well-structured code with data binding
+- 📖 **Book List**: Display a vertical list of books using `RecyclerView`  
+- 🏷️ **Data Binding**: Bind UI components directly to data models  
+- 🍔 **Navigation Drawer**: Slide-out menu for additional actions  
+- 🔔 **Notification Icon**: Tap to show a Toast message  
+- ⭐ **Book Ratings**: Display 1–5 star ratings for each book  
+- 🔍 **Toolbar Hidden**: Custom full-screen toolbar layout  
 
 ---
 
 ## 📸 Screenshots
 
-| Home Screen (English) | Home Screen (Arabic) | Navigation Drawer | Language Switching |
-|-----------------------|----------------------|-------------------|--------------------|
-| ![Home](app/src/main/res/drawable/en1.jpg) | ![Home Arabic](app/src/main/res/drawable/ar1.jpg) | ![Drawer](app/src/main/res/drawable/en2.jpg) | ![Drawer Arabic](app/src/main/res/drawable/ar2.jpg) | ![Language Switch](app/src/main/res/drawable/en3.jpg) | ![Language Switch Arabic](app/src/main/res/drawable/ar3.jpg) |
+| Home Screen | Navigation Drawer |
+|-------------|-------------------|
+| ![Home](app/src/main/res/drawable/ph1.jpg | ![Drawer](app/src/main/res/drawable/ph2.jpg) |
 
-> 💡 Place your screenshots inside `assets/screenshots/` folder
+> 💡 Place your screenshots inside a `screenshots/` folder at the project root.
 
 ---
 
 ## ⚙️ Installation
 
-To run the project locally:
-
-1. **Clone the Repository**
-
-```bash
-git clone https://github.com/your-username/student-groups-app.git
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/android-bookstore-app.git
